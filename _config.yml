@@ -1,0 +1,134 @@
+title: DjangoCon US
+url: "https://2021.djangocon.us"
+author : DjangoCon US
+description: |
+  DjangoCon US 2021 will take place online from October 21-23, 2021!
+enforce_ssl: "2021.djangocon.us"
+relative_permalinks: false
+permalink: news/:title/  # permalink: date
+timezone: Europe/Madrid
+conf_year: 2021
+
+sass:
+  sass_dir: _sass
+  style: :compressed # Esto puede ser :expanded o :compressed según tu preferencia
+
+
+include:
+  - _pages
+
+# Build settings
+markdown: kramdown
+
+plugins:
+- jekyll-feed
+- jekyll-gist
+- jekyll-mentions
+- jekyll-paginate
+- jekyll-redirect-from
+- jekyll-remote-theme
+- jekyll-seo-tag
+- jekyll-sitemap
+- jemoji
+
+exclude:
+- "*.yaml"
+- "*.yml"
+- .cache
+- .editorconfig
+- .gitignore
+- .vendor
+- bin
+- bower_components
+- CNAME
+- CODE_OF_CONDUCT.md
+- CONTRIBUTING.md
+- docker-compose.yml
+- EDITORS_GUIDE.md
+- Gemfile
+- Gemfile.lock
+- justfile
+- LICENSE
+- Makefile
+- node_modules
+- NOTES.md
+- package*.json
+- Procfile
+- README.md
+- requirements.in
+- vendor
+- webpack.config.js
+
+# We need `future` to allow our schedule to work :/
+future: true
+
+collections:  # process the _data folder
+  components:
+    output: false
+  schedule:
+    output: true
+    permalink: /:collection/:name/
+  organizers:
+    output: false
+    permalink: /:collection/
+  presenters:
+    output: true
+    permalink: /:collection/
+  sponsors:
+    output: false
+    permalink: /:collection/
+  places:
+    output: false
+    permalink: /:collection/
+  jobs:
+    output: true
+    permalink: /:collection/:name/
+
+# SEO Plugin settings
+
+twitter:
+  username: djangocon
+
+# This is the default logo that people see with opengraph
+# logo: /static/2021-logos/squares-and-social/djangocon-square.png
+logo: /static/img/social/og.png
+
+
+# Frontmatter fallback settings
+# This is the default logo that people see on blog posts
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /static/img/social/avatar-main.png
+  - scope:
+      path: "_presenters"
+      type: presenters
+    values:
+      sitemap: false
+
+# Our DjangoCon US settings...
+
+schedule_show_video_urls: true
+
+## All the email addresses
+conduct_email: "conduct@djangocon.us"
+contact_us_email: "hello@djangocon.us"
+opportunity_grants_email: "grants@djangocon.us"
+program_team_email: "program@djangocon.us"
+sponsors_email: "sponsors@djangocon.us"
+visa_email: "visas@djangocon.us"
+
+## Our DjangoCon US links
+cfp_application: "https://www.papercall.io/djangocon-us-2021"
+hotel_reservation_link: ""
+mailing_list: "http://eepurl.com/bpvu2f"
+opportunity_grant_application: ""
+slack_link: ""
+sponsorship_prospectus: ""
+ticket_link: "https://ti.to/defna/djangocon-us-2021"
+# youtube_link: ""
+
+github: [metadata]
+facebook:
+  app_id: 280981518972848

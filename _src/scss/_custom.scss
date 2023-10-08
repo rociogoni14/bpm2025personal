@@ -1,0 +1,22 @@
+header {
+  /* Establece la imagen de fondo y su ruta relativa */
+  background-image: url('/assets/images/mi-imagen.jpg');
+  /* Ajusta el tamaño de la imagen para cubrir la cabecera */
+  background-size: cover;
+  /* Centra la imagen vertical y horizontalmente en la cabecera */
+  background-position: center center;
+  /* Establece la altura de la cabecera según tu diseño */
+  height: 400px; /* Ajusta esta altura según tus necesidades */
+  /* Añade otros estilos de diseño según lo que desees */
+  color: #fff; /* Color del texto en la cabecera */
+  text-align: center; /* Centra el texto horizontalmente */
+   padding: 20px; /*Espacio interior de la cabecera */
+  /* Añade un sombreado o superposición para mejorar la legibilidad del texto */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+header h1, header h2 {
+  /* Estilos para los encabezados */
+  color: #fff; /* Color del texto en la cabecera */
+  /* Añade otros estilos de texto según lo que desees */
+}

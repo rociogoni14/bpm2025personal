@@ -1,0 +1,47 @@
+<li><a href="/talks/">Talk Schedule</a></li>
+<li><a href="/news/">News</a></li>
+<li><a href="/sponsors/">Sponsors</a></li>
+<li><a href="/jobs/">Jobs Board</a></li>
+<li class="is-dropdown-submenu-parent">
+  <a href="/conference/" aria-haspopup="true" aria-expanded="false">Conference</a>
+  <ul class="menu vertical nested">
+    <li><a href="/conference_chairs/">Conference Chairs</a></li>
+    <li><a href="/program_committee/">Program Committee</a></li>
+    <li><a href="/steering_committee/">Steering Committee</a></li>
+    <li><a href="/past_conferences/">Past Conferences</a></li>
+  </ul>
+</li>
+<li class="is-dropdown-submenu-parent">
+  <a href="/calls_and_dates/" aria-haspopup="true" aria-expanded="false">Calls and Dates</a>
+  <ul class="menu vertical nested">
+    <li><a href="/call_for_research_papers/">Call for Research Papers</a></li>
+    <li><a href="/call_for_contributions/">Call for contributions</a></li>
+  </ul>
+</li>
+<li class="is-dropdown-submenu-parent">
+  <a href="/venue/" aria-haspopup="true" aria-expanded="false">Former Venue</a>
+  <ul class="menu vertical nested">
+    <li><a href="/venue/conference_venue/">Conference Venue</a></li>
+    <li><a href="/venue/how_to_get_there/">How to get there</a></li>
+    <li><a href="/venue/where_to_stay/">Where to stay</a></li>
+    <li><a href="/venue//visa_information/">Visa Information</a></li>
+    <li><a href="/venue/sevilla/">Sevilla</a></li>
+    <li><a href="/getting_around/">Getting around</a></li>
+  </ul>
+</li>
+<script type="text/javascript">
+  var menuItems = document.querySelectorAll('li.is-dropdown-submenu-parent');
+  Array.prototype.forEach.call(menuItems, function(el, i){
+    el.querySelector('a').addEventListener("click",  function(event){
+      if (this.parentNode.className == "has-submenu") {
+        this.parentNode.className = "has-submenu open";
+        this.setAttribute('aria-expanded', "true");
+      } else {
+        this.parentNode.className = "has-submenu";
+        this.setAttribute('aria-expanded', "false");
+      }
+      event.preventDefault();
+      return false;
+    });
+  });
+</script>

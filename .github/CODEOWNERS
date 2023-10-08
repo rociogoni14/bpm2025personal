@@ -1,0 +1,16 @@
+# These owners will be the default owners for everything in the repo.
+*                           @KatherineMichel @katialira @jefftriplett @drewbrew
+
+# These owners will be the default page owners based on their role.
+# _organizers/*               @
+# _pages/*                    @
+# _pages/financial-aid.md     @
+# _pages/schedule.html        @
+# _pages/sprints.html         @kojoidrissa
+# _pages/talks.html           @
+# _pages/tutorials.html       @
+# _places/*                   @
+# _posts/*                    @rebkin05
+# _schedule/*                 @
+# _schedule/sprints/*         @kojoidrissa
+# _sponsors/*                 @
