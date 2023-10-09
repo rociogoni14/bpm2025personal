@@ -19,11 +19,9 @@ permalink: /how_to_get_there/
         A robust rail network connects Seville with most of other regions of Spain. Therefore, an alternative is flying to either Madrid (MAD) or Malaga (AGP) and then taking a train to Seville. There is a direct train that connects Malaga with Seville in 2 hours and a High Speed Train (AVE) that connects Madrid with Seville in less than 2:30 hours.
     </p>
     </div>
-    <div class="medium-5 large-4 column">
-        <div class="callout text-center partner-cta-box">
-          <h2>Looking for a job?</h2>
-          <p>Some of our sponsors are hiring! Take a look at our virtual jobs board to learn more.</p>
-          <a href="/jobs/" class="button">Check out our jobs board</a>
+    <div class="medium-5 large-5 column">
+        <div class="text-center partner-cta-box">
+          <img src="/image/terminal.jpg" alt="Hombre en aeropuerto">
         </div>
       </div>
 
@@ -58,9 +56,9 @@ permalink: /how_to_get_there/
 -->
 
 {% for incoming-level in site.data.incoming-levels.incoming-levels %}
-  {% assign incomings_in_level = site.incomings | where: 'level', incoming-level.title | where: 'hidden', false %}
-  <div>{{incomings_in_level}}</div>
+  {% assign incomings_in_level = site.sponsors | where: 'level', incoming-level.title | where: 'hidden', false %}
   {% assign incomings_count = incomings_in_level | size %}
+  <div>{{incomings_count}}</div>
   {% if incomings_count != 0 %}
     <div class="section-pad {% cycle 'theme-light-gray', 'theme-medium-gray', 'theme-white' %}">
       <h2 class="text-center v-pad-bottom">{{ incoming-level.title }}</h2>

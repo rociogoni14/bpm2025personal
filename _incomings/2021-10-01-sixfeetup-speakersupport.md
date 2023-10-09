@@ -2,7 +2,7 @@
 layout: base
 
 hidden: false
-level: "Speaker Support"
+level: "From Seville Airport to BPM2025"
 name: "Six Feet Up"
 logo: "/static/img/sponsors/SFUHorizontalLogo.png"
 logo_orientation: "landscape"

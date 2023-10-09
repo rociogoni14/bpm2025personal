@@ -1,8 +1,8 @@
 ---
 description: DjangoCon US is only possible through the support of various organizations.
-heading: Sponsors
+heading: Where to Stay
 layout: base
-permalink: /sponsors/
+permalink: /where_to_stay/
 ---
 
 <header class="subpage-header">
@@ -13,14 +13,12 @@ permalink: /sponsors/
   <div class="row column v-pad-bottom">
     <div class="medium-6 large-7 column">
       <p class="lead">
-        DjangoCon US is only possible through the generosity of the organizations and businesses on this page. Their donations make it possible for us to provide opportunity grants to speakers and attendees, record all talks, host sprints, and feed everyone for six days. Thank you for your support!
+        There are many hotels around the venue in a varied range of prices. Here we list some of them:
       </p>
     </div>
-    <div class="medium-5 large-4 column">
-      <div class="callout text-center partner-cta-box">
-        <h2>Looking for a job?</h2>
-        <p>Some of our sponsors are hiring! Take a look at our virtual jobs board to learn more.</p>
-        <a href="/jobs/" class="button">Check out our jobs board</a>
+    <div class="medium-5 large-5 column">
+      <div class="text-center partner-cta-box">
+        <img src="https://www.ahstatic.com/photos/3210_fe_01_p_2048x1536.jpg" alt="Recepción Novotel">
       </div>
     </div>
   </div>
@@ -53,30 +51,29 @@ permalink: /sponsors/
         </div>
 -->
 
-{% for sponsor-level in site.data.sponsor-levels.sponsor-levels %}
-  {% assign sponsors_in_level = site.sponsors | where: 'level', sponsor-level.title | where: 'hidden', false %}
+{% for staying-level in site.data.staying-levels.staying-levels %}
+  {% assign stayings_in_level = site.sponsors | where: 'level', staying-level.title | where: 'hidden', false %}
  
-  {% assign sponsors_count = sponsors_in_level | size %}
-  {% if sponsors_count != 0 %}
+  {% assign stayings_count = stayings_in_level | size %}
+  {% if stayings_count != 0 %}
     <div class="section-pad {% cycle 'theme-light-gray', 'theme-medium-gray', 'theme-white' %}">
-      <h2 class="text-center v-pad-bottom">{{ sponsor-level.title }}</h2>
-      {% for sponsor in sponsors_in_level %}
-        {% if sponsor.level == sponsor-level.title %}
-          {% unless sponsor.hidden %}
+      <h2 class="text-center v-pad-bottom">{{ staying-level.title }}</h2>
+      {% for staying in stayings_in_level %}
+        {% if staying.level == staying-level.title %}
+          {% unless staying.hidden %}
             <div class="row partner">
               <div class="column medium-4 text-center">
-                <a href="{{ sponsor.url_target }}" rel="sponsored">
+                <a href="{{ staying.url_target }}" rel="sponsored">
                   <img
-                    class="partner-logo {{ sponsor.logo_orientation }}"
-                    src="{{ sponsor.logo }}"
-                    alt="{{ sponsor.name }} Logo" />
+                    class="partner-logo {{ staying.logo_orientation }}"
+                    src="{{ staying.logo }}"
+                    alt="{{ staying.name }} Logo" />
                 </a>
               </div>
               <div class="column medium-8">
-                <h3 class="partner-name"><a href="{{ sponsor.url_target }}" rel="sponsored">{{ sponsor.name }}</a></h3>
-                {% capture sponsor_description %}{{ sponsor.description }}{: .partner-description }{% endcapture %}
-                {{ sponsor_description | markdownify }}
-                {% if sponsor.hiring %}<a href="/jobs/" class="button">{{ sponsor.name }} is hiring!</a>{% endif %}
+                <h3 class="partner-name"><a href="{{ staying.url_target }}" rel="sponsored">{{ staying.name }}</a></h3>
+                {% capture staying_description %}{{ staying.description }}{: .partner-description }{% endcapture %}
+                {{ staying_description | markdownify }}
               </div>
             </div>
           {% endunless %}
