@@ -1,8 +1,8 @@
-title: DjangoCon US
+title: 23rd Int. Conference on Business Process Management (BPM 2025)
 url: "https://2021.djangocon.us"
-author : DjangoCon US
+author : BPM2025
 description: |
-  DjangoCon US 2021 will take place online from October 21-23, 2021!
+  23rd Int. Conference on Business Process Management (BPM 2025)
 enforce_ssl: "2021.djangocon.us"
 relative_permalinks: false
 permalink: news/:title/  # permalink: date
