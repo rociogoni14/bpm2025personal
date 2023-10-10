@@ -4,7 +4,7 @@ layout: base
 hidden: false
 level: "Non-EU/EEA Nationals"
 name: ""
-logo: "/image/iberia-logo.jpg"
+logo: "/image/non-eu.jpg"
 logo_orientation: "landscape"
 url_target: ""
 url_friendly: ""

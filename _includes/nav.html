@@ -1,7 +1,7 @@
-<li><a href="/talks/">Talk Schedule</a></li>
-<li><a href="/news/">News</a></li>
-<li><a href="/sponsors/">Sponsors</a></li>
-<li><a href="/jobs/">Jobs Board</a></li>
+<li><a class="logo" href="/">
+  <img src="{{ "/image/logo.png" | relative_url }}" alt="BPM {{ site.conf_year }} | Online" width="60"/>
+</a></li>
+<li><a href="/index.html">Home</a></li>
 <li class="is-dropdown-submenu-parent">
   <a href="/conference/" aria-haspopup="true" aria-expanded="false">Conference</a>
   <ul class="menu vertical nested">
@@ -12,14 +12,24 @@
   </ul>
 </li>
 <li class="is-dropdown-submenu-parent">
-  <a href="/calls_and_dates/" aria-haspopup="true" aria-expanded="false">Calls and Dates</a>
+  <a href="/calls_and_dates/" aria-haspopup="true" aria-expanded="false">Calls</a>
   <ul class="menu vertical nested">
     <li><a href="/call_for_research_papers/">Call for Research Papers</a></li>
     <li><a href="/call_for_contributions/">Call for contributions</a></li>
   </ul>
 </li>
 <li class="is-dropdown-submenu-parent">
-  <a href="/venue/" aria-haspopup="true" aria-expanded="false">Former Venue</a>
+  <a href="/program/" aria-haspopup="true" aria-expanded="false">Program</a>
+  <ul class="menu vertical nested">
+    
+  </ul>
+</li>
+<li><a href="/workshops/">Workshops</a></li>
+<li><a href="/news/">Registration</a></li>
+<li><a href="/sponsors/">Sponsors</a></li>
+
+<li class="is-dropdown-submenu-parent">
+  <a href="/conference_venue/" aria-haspopup="true" aria-expanded="false">Former Venue</a>
   <ul class="menu vertical nested">
     <li><a href="/conference_venue/">Conference Venue</a></li>
     <li><a href="/how_to_get_there/">How to get there</a></li>
@@ -29,6 +39,9 @@
     <li><a href="/getting_around/">Getting around</a></li>
   </ul>
 </li>
+
+<li><a href="/co-located-events/">Co-located events</a></li>
+
 <script type="text/javascript">
   var menuItems = document.querySelectorAll('li.is-dropdown-submenu-parent');
   Array.prototype.forEach.call(menuItems, function(el, i){
