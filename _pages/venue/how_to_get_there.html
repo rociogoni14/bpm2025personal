@@ -56,7 +56,7 @@ permalink: /how_to_get_there/
 -->
 
 {% for incoming-level in site.data.incoming-levels.incoming-levels %}
-  {% assign incomings_in_level = site.sponsors | where: 'level', incoming-level.title | where: 'hidden', false %}
+  {% assign incomings_in_level = site.incomings | where: 'level', incoming-level.title | where: 'hidden', false %}
   {% assign incomings_count = incomings_in_level | size %}
   <div>{{incomings_count}}</div>
   {% if incomings_count != 0 %}

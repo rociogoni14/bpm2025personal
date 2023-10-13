@@ -83,6 +83,20 @@ collections:  # process the _data folder
   jobs:
     output: true
     permalink: /:collection/:name/
+  transports:
+    output: false
+    permalink: /:collection/
+  incomings:
+    output: false
+    permalink: /:collection/
+  stayings:
+    output: false
+    permalink: /:collection/
+  visas:
+    output: false
+    permalink: /:collection/
+
+
 
 # SEO Plugin settings
 

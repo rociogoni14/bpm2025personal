@@ -30,7 +30,7 @@ permalink: /visa_information/
   
 
 {% for visa-level in site.data.visa-levels.visa-levels %}
-  {% assign visas_in_level = site.sponsors | where: 'level', visa-level.title | where: 'hidden', false %}
+  {% assign visas_in_level = site.visas | where: 'level', visa-level.title | where: 'hidden', false %}
  
   {% assign visas_count = visas_in_level | size %}
   {% if visas_count != 0 %}
