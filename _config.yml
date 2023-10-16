@@ -1,9 +1,9 @@
 title: 23rd Int. Conference on Business Process Management (BPM 2025)
-url: "https://2021.djangocon.us"
-author : BPM2025
+url: ""
+author : Rocío Goñi Medina...
 description: |
   23rd Int. Conference on Business Process Management (BPM 2025)
-enforce_ssl: "2021.djangocon.us"
+enforce_ssl: ""
 relative_permalinks: false
 permalink: news/:title/  # permalink: date
 timezone: Europe/Madrid
@@ -95,13 +95,19 @@ collections:  # process the _data folder
   visas:
     output: false
     permalink: /:collection/
+  steerings:
+    output: false
+    permalink: /:collection/
+  assistants:
+    output: false
+    permalink: /:collection/
 
 
 
 # SEO Plugin settings
 
 twitter:
-  username: djangocon
+  username: 
 
 # This is the default logo that people see with opengraph
 # logo: /static/2021-logos/squares-and-social/djangocon-square.png
@@ -126,21 +132,21 @@ defaults:
 schedule_show_video_urls: true
 
 ## All the email addresses
-conduct_email: "conduct@djangocon.us"
-contact_us_email: "hello@djangocon.us"
-opportunity_grants_email: "grants@djangocon.us"
-program_team_email: "program@djangocon.us"
-sponsors_email: "sponsors@djangocon.us"
-visa_email: "visas@djangocon.us"
+conduct_email: ""
+contact_us_email: ""
+opportunity_grants_email: ""
+program_team_email: ""
+sponsors_email: ""
+visa_email: ""
 
 ## Our DjangoCon US links
-cfp_application: "https://www.papercall.io/djangocon-us-2021"
+cfp_application: ""
 hotel_reservation_link: ""
-mailing_list: "http://eepurl.com/bpvu2f"
+mailing_list: ""
 opportunity_grant_application: ""
 slack_link: ""
 sponsorship_prospectus: ""
-ticket_link: "https://ti.to/defna/djangocon-us-2021"
+ticket_link: ""
 # youtube_link: ""
 
 github: [metadata]
