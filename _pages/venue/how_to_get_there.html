@@ -5,11 +5,13 @@ layout: base
 permalink: /how_to_get_there/
 ---
 
-<header class="subpage-header">
+<header class="subpage-header" style="background-image: url(/image/plane.png); background-size: cover;">
   <h1>{{ page.heading }}</h1>
 </header>
 
 <div class="content">
+  <br>
+  <br>
   <div class="row column v-pad-bottom">
     
     <div class="medium-6 large-7 column">
@@ -58,9 +60,8 @@ permalink: /how_to_get_there/
 {% for incoming-level in site.data.incoming-levels.incoming-levels %}
   {% assign incomings_in_level = site.incomings | where: 'level', incoming-level.title | where: 'hidden', false %}
   {% assign incomings_count = incomings_in_level | size %}
-  <div>{{incomings_count}}</div>
   {% if incomings_count != 0 %}
-    <div class="section-pad {% cycle 'theme-light-gray', 'theme-medium-gray', 'theme-white' %}">
+    <div class="section-pad {% cycle 'theme-light-gray', 'theme-white', 'theme-medium-gray'  %}">
       <h2 class="text-center v-pad-bottom">{{ incoming-level.title }}</h2>
       {% for incoming in incomings_in_level %}
         {% if incoming.level == incoming-level.title %}

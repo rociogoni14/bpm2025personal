@@ -165,7 +165,7 @@ $header-lineheight: 1.2;
 $header-margin-bottom: 1rem;
 $header-styles: (
   small: (
-    'h1': ('font-size': 34),
+    'h1': ('font-size': 40),
     'h2': ('font-size': 34),
     'h3': ('font-size': 24),
     'h4': ('font-size': 20),
@@ -173,7 +173,7 @@ $header-styles: (
     'h6': ('font-size': 16),
   ),
   medium: (
-    'h1': ('font-size': 48),
+    'h1': ('font-size': 52),
     'h2': ('font-size': 44),
     'h3': ('font-size': 31),
     'h4': ('font-size': 25),
@@ -652,12 +652,12 @@ $thumbnail-radius: 0;
 // 35. Title Bar
 // -------------
 
-$titlebar-background: $brand-color2;
+$titlebar-background: $brand-color8;
 $titlebar-color: $white;
 $titlebar-padding: 0;
 $titlebar-text-font-weight: $global-weight-normal;
 $titlebar-icon-color: $brand-color1;
-$titlebar-icon-color-hover: $brand-color2;
+$titlebar-icon-color-hover: $brand-color8;
 $titlebar-icon-spacing: 0.25rem;
 
 // 36. Tooltip
